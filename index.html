@@ -56,5 +56,12 @@
         <p class="project-name">Project 2</p>
       </div>
     </div>
+    <script>
+      if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        $(window).on("scroll", function () {
+          $("body").css("background-attachment", "fixed");
+        });
+      }
+    </script>
   </body>
 </html>
