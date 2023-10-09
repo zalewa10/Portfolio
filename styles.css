@@ -13,6 +13,10 @@
   src: url("/fonts/DS-DIGI.TTF") format("truetype"); /* Specify the correct font file path and format */
   /* You can also provide additional font formats for better browser compatibility */
 }
+a {
+  color: black;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -23,6 +27,7 @@ body::before {
   background: url("img/bg/bg-mob.png") center/cover no-repeat;
   z-index: -1;
 }
+
 body {
   background: center/cover url("img/bg/bg-mob.png");
   background-repeat: no-repeat;
