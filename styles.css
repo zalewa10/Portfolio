@@ -8,6 +8,12 @@
   --cyan: #47c8ff;
 }
 
+@font-face {
+  font-family: "DS-Digital";
+  src: url("/fonts/DS-DIGI.TTF") format("truetype"); /* Specify the correct font file path and format */
+  /* You can also provide additional font formats for better browser compatibility */
+}
+
 body {
   background: center/cover url("img/bg/bg-mob.png");
   background-repeat: no-repeat;
@@ -16,12 +22,19 @@ body {
   padding: 0 10px;
 }
 
-.hero {
+.dif-font {
+  font-family: "DS-Digital", sans-serif;
+}
+
+.fl-ctn {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
+}
+
+.hero {
+  flex-direction: column;
+  padding: 100px 0 0 0;
 }
 
 h1 {
@@ -46,4 +59,79 @@ h1 {
   margin-top: 50px;
   -webkit-box-shadow: 0px 1px 10px 4px rgba(71, 200, 255, 0.3);
   box-shadow: 0px 1px 10px 4px rgba(71, 200, 255, 0.3);
+}
+
+.gap {
+  margin: 100px 0;
+}
+.gap2 {
+  margin: 200px 0;
+}
+.hero-img img {
+  width: 80%;
+}
+
+.btn-info {
+  border-radius: 21px;
+  border: none;
+  padding: 0.6em 2em;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 50px 0;
+}
+
+.header {
+  color: white;
+  font-weight: 700;
+  font-size: 3em;
+  text-align: center;
+}
+
+.inner {
+  padding: 0 20px;
+}
+
+.me {
+  flex-direction: column;
+  background-image: url("img/bg/card-bg.jpg");
+  border-radius: 30px;
+  padding: 0 20px 50px 20px;
+}
+
+.me-main {
+  color: white;
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.me-sub {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.portfolio {
+  flex-direction: column;
+  gap: 100px;
+}
+
+.img-con {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.img-con img {
+  width: 50%;
+}
+
+.project-name {
+  color: white;
+  font-weight: 700;
+  text-align: center;
 }
