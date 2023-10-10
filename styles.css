@@ -8,16 +8,19 @@
   --cyan: #47c8ff;
 }
 
-@font-face {
-  font-family: "DS-Digital";
-  src: url("/fonts/DS-DIGI.TTF") format("truetype"); /* Specify the correct font file path and format */
-  /* You can also provide additional font formats for better browser compatibility */
+nav {
+  position: fixed;
 }
 a {
   color: black;
+  text-decoration: none;
 }
 
-body::before {
+a:visited {
+  color: black;
+}
+
+body:before {
   content: "";
   position: fixed;
   top: 0;
@@ -55,6 +58,7 @@ h1 {
   color: white;
   font-size: 4em;
   font-weight: 800;
+  text-align: center;
 }
 
 .sub-hero {
@@ -71,8 +75,14 @@ h1 {
   font-weight: 600;
   background-color: var(--cyan);
   margin-top: 50px;
+  cursor: pointer;
   -webkit-box-shadow: 0px 1px 10px 4px rgba(71, 200, 255, 0.3);
   box-shadow: 0px 1px 10px 4px rgba(71, 200, 255, 0.3);
+}
+
+.btn-active:hover {
+  transform: scale(102%);
+  transition: 150ms ease-in-out;
 }
 
 .gap {
@@ -81,6 +91,7 @@ h1 {
 .gap2 {
   margin: 200px 0;
 }
+
 .hero-img img {
   width: 80%;
 }
@@ -109,7 +120,7 @@ h1 {
 
 .me {
   flex-direction: column;
-  background-image: url("img/bg/card-bg.jpg");
+  background: center/cover url("img/bg/card-bg.jpg");
   border-radius: 30px;
   padding: 0 20px 50px 20px;
 }
@@ -148,4 +159,26 @@ h1 {
   color: white;
   font-weight: 700;
   text-align: center;
+}
+
+.credentials {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.opinion {
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  transform: rotateZ(5deg);
+}
+
+.opinion:nth-child(2n) {
+  transform: rotateZ(-1deg);
 }
