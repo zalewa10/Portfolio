@@ -182,3 +182,13 @@ h1 {
 .opinion:nth-child(2n) {
   transform: rotateZ(-1deg);
 }
+
+.outer {
+  height: 100vh;
+  /* overflow-y: scroll; Enable vertical scrolling */
+  scroll-snap-type: y mandatory;
+}
+
+.iner {
+  scroll-snap-align: start;
+}
