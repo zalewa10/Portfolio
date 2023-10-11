@@ -150,7 +150,7 @@ h1 {
   flex-direction: column;
   gap: 100px;
   width: 100%;
-  background: center/cover url(/img/bg/aurora2.png);
+  background: center/cover url(img/bg/aurora2.png);
   padding: 10px 0;
 }
 
