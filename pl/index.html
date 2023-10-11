@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kzalewski - web dev</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="flex items-center md:order-2">
+        <button
+          type="button"
+          data-dropdown-toggle="language-dropdown-menu"
+          class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 btn-language"
+        >
+          <svg
+            class="h-5 w-5 mr-2 rounded-full"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            id="flag-icon-css-pl"
+            viewBox="0 0 64 64"
+          >
+            <path
+              fill="#f9f9f9"
+              d="M32 2c16.6 0 30 13.4 30 30H2C2 15.4 15.4 2 32 2z"
+            />
+            <path
+              fill="#ed4c5c"
+              d="M32 62C15.4 62 2 48.6 2 32h60c0 16.6-13.4 30-30 30"
+            />
+          </svg>
+
+          PL
+        </button>
+        <!-- Dropdown -->
+        <div
+          class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
+          id="language-dropdown-menu"
+        >
+          <ul class="py-2 font-medium" role="none">
+            <li>
+              <a
+                href="/index.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                role="menuitem"
+              >
+                <div class="inline-flex items-center">
+                  <svg
+                    class="w-5 h-5 mr-2 rounded-full"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 3900 3900"
+                  >
+                    <path fill="#b22234" d="M0 0h7410v3900H0z" />
+                    <path
+                      d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0"
+                      stroke="#fff"
+                      stroke-width="300"
+                    />
+                    <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
+                    <g fill="#fff">
+                      <g id="d">
+                        <g id="c">
+                          <g id="e">
+                            <g id="b">
+                              <path
+                                id="a"
+                                d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"
+                              />
+                              <use xlink:href="#a" y="420" />
+                              <use xlink:href="#a" y="840" />
+                              <use xlink:href="#a" y="1260" />
+                            </g>
+                            <use xlink:href="#a" y="1680" />
+                          </g>
+                          <use xlink:href="#b" x="247" y="210" />
+                        </g>
+                        <use xlink:href="#c" x="494" />
+                      </g>
+                      <use xlink:href="#d" x="988" />
+                      <use xlink:href="#c" x="1976" />
+                      <use xlink:href="#e" x="2470" />
+                    </g>
+                  </svg>
+                  EN
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hero fl-ctn">
+      <h1>Programista</h1>
+      <p class="sub-hero">dla Twoich potrzeb internetowych</p>
+      <a href="mailto:kontakt-kzalewski@gmail.com">
+        <button class="btn-active">Porozmawiajmy</button>
+      </a>
+    </div>
+
+    <div class="hero-img gap fl-ctn">
+      <img src="/img/pc.png" alt="" />
+    </div>
+
+    <p class="header gap2">
+      Twoja Wizja, Moje Utworzenie. Stwórzmy coś niesamowitego✨
+    </p>
+
+    <div class="inner">
+      <div class="me fl-ctn">
+        <button class="btn-info">Dlaczego ja?</button>
+        <p class="me-main">
+          Tworzę Strony Internetowe, Które Naprawdę Cię Odzwierciedlają
+        </p>
+        <p class="me-sub">
+          Zawsze spragniony wiedzy i obdarzony zdolnością do tworzenia, wnoszę
+          do każdego projektu świeże, innowacyjne spojrzenie. Wybór mnie oznacza
+          przyjęcie dynamicznego designu i nowatorskich rozwiązań, dopasowanych
+          specjalnie dla Ciebie.
+        </p>
+      </div>
+    </div>
+
+    <p class="header gap2">
+      💭 Nadal się zastanawiasz? Sprawdź moje portfolio!
+    </p>
+
+    <div class="portfolio gap2 fl-ctn">
+      <div class="project fl-ctn">
+        <img src="/img/projects/autos.png" alt="" />
+        <a href="https://auto-s.pl"><p class="project-name">AUTO-S OSK</p></a>
+      </div>
+
+      <div class="project fl-ctn">
+        <img src="/img/projects/seera.png" alt="" />
+        <a href="https://seera-corp.eu"
+          ><p class="project-name">SEERA-CORP</p></a
+        >
+      </div>
+    </div>
+
+    <p class="header gap2">
+      Potrzebujesz dowodów? <br />
+      📢 Posłuchaj zadowolonych klientów
+    </p>
+
+    <div class="credentials">
+      <div class="opinion">
+        <p class="main-opinion">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+          consectetur atque, tempore et esse veritatis cumque alias, eveniet
+          dolorum voluptatibus voluptate sunt accusantium! Reiciendis deleniti
+          animi labore nobis iste harum.
+        </p>
+        <div class="sub-opinion">Jan Kowalski - Firma A</div>
+      </div>
+      <div class="opinion">
+        <p class="main-opinion">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+          consectetur atque, tempore et esse veritatis cumque alias, eveniet
+          dolorum voluptatibus voluptate sunt accusantium! Reiciendis deleniti
+          animi labore nobis iste harum.
+        </p>
+        <div class="sub-opinion">Jan Kowalski - Firma B</div>
+      </div>
+      <p class="me-sub">Następny może być Twój...</p>
+    </div>
+
+    <p class="header gap2">Nie wiem jeszcze co tutaj</p>
+
+    <script>
+      if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        $(window).on("scroll", function () {
+          $("body").css("background-attachment", "fixed");
+        });
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  </body>
+</html>
+```

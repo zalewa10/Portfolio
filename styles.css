@@ -9,7 +9,11 @@
 }
 
 nav {
-  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+  padding: 10px;
 }
 a {
   color: black;
@@ -36,7 +40,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Inter", sans-serif;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
 
 .dif-font {
@@ -51,7 +55,7 @@ body {
 
 .hero {
   flex-direction: column;
-  padding: 100px 0 0 0;
+  padding: 100px 10px 0 10px;
 }
 
 h1 {
@@ -94,6 +98,7 @@ h1 {
 
 .hero-img img {
   width: 80%;
+  padding: 0 10px;
 }
 
 .btn-info {
@@ -112,6 +117,7 @@ h1 {
   font-weight: 700;
   font-size: 3em;
   text-align: center;
+  padding: 0 10px;
 }
 
 .inner {
@@ -143,22 +149,28 @@ h1 {
 .portfolio {
   flex-direction: column;
   gap: 100px;
+  width: 100%;
+  background: center/cover url(/img/bg/aurora2.png);
+  padding: 10px 0;
 }
 
-.img-con {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 15px;
-}
-
-.img-con img {
-  width: 50%;
+.project {
+  flex-direction: column;
+  padding: 10px;
 }
 
 .project-name {
   color: white;
-  font-weight: 700;
+  font-weight: 600;
+  text-underline-offset: 7px;
+  text-decoration: 1px underline rgba(255, 255, 255, 0.2);
+  font-size: 1.5em;
   text-align: center;
+  margin-top: 10px;
+}
+
+.project-name:hover {
+  color: rgb(210, 231, 255);
 }
 
 .credentials {
@@ -179,16 +191,30 @@ h1 {
   transform: rotateZ(5deg);
 }
 
+.main-opinion {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.sub-opinion {
+  margin-top: 10px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.me-sub {
+  margin-top: 10px;
+  font-weight: 200;
+}
+
 .opinion:nth-child(2n) {
   transform: rotateZ(-1deg);
 }
 
-.outer {
-  height: 100vh;
-  /* overflow-y: scroll; Enable vertical scrolling */
-  scroll-snap-type: y mandatory;
+.btn-language {
+  color: white;
 }
 
-.iner {
-  scroll-snap-align: start;
+.btn-language:hover {
+  background-color: #0b003b6b;
 }
