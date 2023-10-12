@@ -210,6 +210,9 @@ h1 {
 .opinion:nth-child(2n) {
   transform: rotateZ(-1deg);
 }
+.opinion:nth-child(3n) {
+  transform: rotateZ(3deg);
+}
 
 .btn-language {
   color: white;
@@ -217,4 +220,15 @@ h1 {
 
 .btn-language:hover {
   background-color: #0b003b6b;
+}
+
+.logo {
+  width: 40%;
+}
+
+.fl-just {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
 }
