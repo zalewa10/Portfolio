@@ -7,6 +7,34 @@
 :root {
   --cyan: #47c8ff;
 }
+body,
+html {
+  /* overflow: hidden; */
+}
+/* 
+.container {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  transform: rotateZ(10deg);
+}
+
+.scrolling-text {
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.scrolling-text .scrolling-text-content {
+  color: black;
+  background-color: rgba(168, 137, 15, 0.784);
+  font-size: 5em;
+  white-space: nowrap;
+  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+  line-height: 1em;
+  margin: 50px 0;
+} */
 
 nav {
   display: flex;
@@ -246,6 +274,48 @@ a:hover {
   width: 100%;
 }
 
+.footer {
+  background-color: black;
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+.footer-content {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.copyright-text {
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+.btn-info2 {
+  /* text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 8px; */
+  border-radius: 21px;
+  border: none;
+  padding: 0.6em 3em;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+}
+
+.btn-info2:hover {
+  transform: scale(102%);
+  transition: 150ms ease-in-out;
+}
+
 @media only screen and (min-width: 600px) {
   body:before {
     background: url("img/bg/bg-pc.png") center/cover no-repeat;
@@ -299,7 +369,8 @@ a:hover {
   }
 
   .gap2 {
-    padding: 100px 0 0 0;
+    margin: 0;
+    padding: 100px 0 100px 0;
   }
 
   .inner {
@@ -309,12 +380,14 @@ a:hover {
 
   .portfolio {
     background: center/cover url("img/bg/aurora1.png");
-    padding: 130px 0;
+    padding: 30px 0;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   .project img {
-    max-width: 50%;
+    max-width: 80%;
   }
 
   .me-main {
@@ -366,5 +439,33 @@ a:hover {
     100% {
       margin-top: 0;
     }
+  }
+
+  .gap {
+    margin: 100px 0;
+  }
+  .gap2 {
+    margin: 100px 0;
+  }
+
+  .credentials {
+    flex-direction: row;
+  }
+  .opinion {
+    transform: rotateZ(0deg);
+  }
+  .opinion:nth-child(2n) {
+    transform: rotateZ(0deg);
+  }
+  .opinion:nth-child(3n) {
+    transform: rotateZ(0deg);
+  }
+
+  .opinion-sub {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
